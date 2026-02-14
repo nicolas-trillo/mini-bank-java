@@ -1,3 +1,9 @@
+package service;
+
+import exception.InsufficientFundsException;
+import model.Account;
+import model.Transaction;
+
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -15,7 +21,7 @@ public class BankService {
                 }
                 case WITHDRAWAL, FEE -> {
                     if (currentBalance.subtract(transaction.amount()).compareTo(BigDecimal.ZERO) < 0) {
-                        throw new IllegalArgumentException("Illegal Transaction> Insufficient funds");
+                        throw new InsufficientFundsException("Illegal Transaction> Insufficient funds");
                     } else {
                         currentBalance = currentBalance.subtract(transaction.amount());
                         transactionList.add(transaction);

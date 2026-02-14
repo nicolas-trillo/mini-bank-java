@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mrcrab.iml" filepath="$PROJECT_DIR$/mrcrab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mrcrab-mini.iml" filepath="$PROJECT_DIR$/mrcrab-mini.iml" />
     </modules>
   </component>
 </project>

@@ -1,3 +1,7 @@
+package experiments;
+
+import model.Transaction;
+
 import java.math.BigDecimal;
 
 public class Feb11 {

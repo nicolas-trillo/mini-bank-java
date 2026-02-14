@@ -1,3 +1,7 @@
+import model.Account;
+import model.Transaction;
+import service.BankService;
+
 void main() {
     // Cuenta inicial con 1000
     Account account = new Account(
